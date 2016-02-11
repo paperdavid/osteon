@@ -60,6 +60,22 @@ a {
   }
 }
 
+a.link{
+  color: @link-color;
+  border-bottom: 1px solid @brand-primary-underline;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    border-bottom: 1px solid @brand-danger-underline;
+  }
+
+  &:focus {
+    .tab-focus();
+  }
+}
+
 
 // Figures
 //

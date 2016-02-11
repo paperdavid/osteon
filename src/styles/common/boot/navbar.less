@@ -158,14 +158,16 @@
 }
 
 
+
 // Brand/project name
 
 .navbar-brand {
   float: left;
-  padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  padding: 10px 15px;
   font-size: @font-size-large;
-  line-height: @line-height-computed;
+  line-height: 40px;
   height: @navbar-height;
+  margin-right: 2em;
 
   &:hover,
   &:focus {
@@ -174,9 +176,19 @@
 
   > img {
     display: block;
+    height: 40px;
+  }
+
+  @media (max-width: 991px) {
+  margin-right: 0;
+  padding: 17px 15px;
+    & img {
+      height: 25px;
+    }
   }
 
   @media (min-width: @grid-float-breakpoint) {
+
     .navbar > .container &,
     .navbar > .container-fluid & {
       margin-left: -@navbar-padding-horizontal;
@@ -415,6 +427,7 @@
     > li > a {
       color: @navbar-default-link-color;
 
+
       &:hover,
       &:focus {
         color: @navbar-default-link-hover-color;
@@ -422,6 +435,8 @@
       }
       & span {
         border-bottom: 1px solid @black-underline;
+        line-height: 18px;
+        display: block;
 
         &:hover {
           border-color: @brand-danger-underline;
@@ -479,6 +494,15 @@
     }
 
     @media (max-width: @grid-float-breakpoint-max) {
+      & > li {
+        margin: 0 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        & > a span {
+          border-bottom: none;
+        }
+      }
       // Dropdowns get custom display when collapsed
       .open .dropdown-menu {
         > li > a {
@@ -509,7 +533,12 @@
     }
   }
 
-
+// Mobile
+@media (max-width: @grid-float-breakpoint-max) {
+  .navbar-collapse {
+    background-color: #f5f6f7;
+  }
+}
   // Links in navbars
   //
   // Add a class to ensure links outside the navbar nav are colored correctly.
@@ -534,5 +563,19 @@
         color: @navbar-default-link-disabled-color;
       }
     }
+  }
+}
+
+.menu {
+  margin-right: -15px!important;
+  margin-left: -15px!important;
+
+  &__list {
+    width: 90%;
+    padding-top: 2em;
+  }
+
+  &__lang {
+    padding-top: 2em;
   }
 }

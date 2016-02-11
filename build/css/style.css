@@ -2,6 +2,14 @@
 /* Styles (LESS/CSS) files supervisor */
 /**************************************/
 /* Custom */
+@font-face
+{
+    font-family: 'Museo Sans Cyrl';
+    font-weight: 500;
+    font-style: normal;
+
+    src: url('fonts/museosanscyrl-500-normal.woff2') format('woff2'), url('fonts/museosanscyrl-500-normal.woff') format('woff'), url('fonts/museosanscyrl-500-normal.ttf') format('truetype');
+}
 /***************************************************/
 /* Set custom or change third-party Less variables */
 /***************************************************/
@@ -1424,7 +1432,7 @@ body
     font-size: 14px;
     line-height: 1.42857143;
 
-    color: #333;
+    color: #000;
     background-color: #fff;
 }
 input,
@@ -1440,16 +1448,35 @@ a
 {
     text-decoration: none;
 
-    color: #337ab7;
+    color: #0c4f72;
 }
 a:hover,
 a:focus
 {
     text-decoration: underline;
 
-    color: #23527c;
+    color: #d9534f;
 }
 a:focus
+{
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+a.link
+{
+    text-decoration: none;
+
+    color: #0c4f72;
+    border-bottom: 1px solid rgba(12, 79, 114, .2);
+}
+a.link:hover,
+a.link:focus
+{
+    color: #d9534f;
+    border-bottom: 1px solid rgba(217, 83, 79, .2);
+}
+a.link:focus
 {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -1670,6 +1697,27 @@ p
 {
     margin: 0 0 10px;
 }
+@media (max-width: 768px)
+{
+    body
+    {
+        font-size: 11px;
+    }
+}
+@media (max-width: 768px)
+{
+    body
+    {
+        font-size: 11px;
+    }
+}
+@media (max-width: 480px)
+{
+    body
+    {
+        font-size: 14px;
+    }
+}
 .lead
 {
     font-size: 16px;
@@ -1735,12 +1783,12 @@ mark,
 }
 .text-primary
 {
-    color: #337ab7;
+    color: #0c4f72;
 }
 a.text-primary:hover,
 a.text-primary:focus
 {
-    color: #286090;
+    color: #072f44;
 }
 .text-success
 {
@@ -1781,12 +1829,12 @@ a.text-danger:focus
 .bg-primary
 {
     color: #fff;
-    background-color: #337ab7;
+    background-color: #0c4f72;
 }
 a.bg-primary:hover,
 a.bg-primary:focus
 {
-    background-color: #286090;
+    background-color: #072f44;
 }
 .bg-success
 {
@@ -3854,7 +3902,7 @@ select[multiple].input-lg
     margin-top: 5px;
     margin-bottom: 10px;
 
-    color: #737373;
+    color: #404040;
 }
 @media (min-width: 768px)
 {
@@ -4115,29 +4163,29 @@ fieldset[disabled] .btn-default.focus
 .btn-primary
 {
     color: #fff;
-    border-color: #2e6da4;
-    background-color: #337ab7;
+    border-color: #0a3f5b;
+    background-color: #0c4f72;
 }
 .btn-primary:focus,
 .btn-primary.focus
 {
     color: #fff;
-    border-color: #122b40;
-    background-color: #286090;
+    border-color: #000;
+    background-color: #072f44;
 }
 .btn-primary:hover
 {
     color: #fff;
-    border-color: #204d74;
-    background-color: #286090;
+    border-color: #041924;
+    background-color: #072f44;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary
 {
     color: #fff;
-    border-color: #204d74;
-    background-color: #286090;
+    border-color: #041924;
+    background-color: #072f44;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -4150,8 +4198,8 @@ fieldset[disabled] .btn-default.focus
 .open > .dropdown-toggle.btn-primary.focus
 {
     color: #fff;
-    border-color: #122b40;
-    background-color: #204d74;
+    border-color: #000;
+    background-color: #041924;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -4169,12 +4217,12 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus
 {
-    border-color: #2e6da4;
-    background-color: #337ab7;
+    border-color: #0a3f5b;
+    background-color: #0c4f72;
 }
 .btn-primary .badge
 {
-    color: #337ab7;
+    color: #0c4f72;
     background-color: #fff;
 }
 .btn-success
@@ -4441,7 +4489,7 @@ fieldset[disabled] .btn-danger.focus
 {
     font-weight: normal;
 
-    color: #337ab7;
+    color: #0c4f72;
     border-radius: 0;
 }
 .btn-link,
@@ -4465,7 +4513,7 @@ fieldset[disabled] .btn-link
 {
     text-decoration: underline;
 
-    color: #23527c;
+    color: #d9534f;
     background-color: transparent;
 }
 .btn-link[disabled]:hover,
@@ -4660,7 +4708,7 @@ tbody.collapse.in
 
     color: #fff;
     outline: 0;
-    background-color: #337ab7;
+    background-color: #0c4f72;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -5221,7 +5269,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 .nav .open > a:hover,
 .nav .open > a:focus
 {
-    border-color: #337ab7;
+    border-color: #0c4f72;
     background-color: #eee;
 }
 .nav .nav-divider
@@ -5348,7 +5396,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 .nav-pills > li.active > a:focus
 {
     color: #fff;
-    background-color: #337ab7;
+    background-color: #0c4f72;
 }
 .nav-stacked > li
 {
@@ -5582,12 +5630,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 .navbar-brand
 {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 40px;
 
     float: left;
 
     height: 60px;
-    padding: 20px 15px;
+    margin-right: 2em;
+    padding: 10px 15px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus
@@ -5597,6 +5646,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 .navbar-brand > img
 {
     display: block;
+
+    height: 40px;
+}
+@media (max-width: 991px)
+{
+    .navbar-brand
+    {
+        margin-right: 0;
+        padding: 17px 15px;
+    }
+    .navbar-brand img
+    {
+        height: 25px;
+    }
 }
 @media (min-width: 768px)
 {
@@ -5913,6 +5976,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 }
 .navbar-default .navbar-nav > li > a span
 {
+    line-height: 18px;
+
+    display: block;
+
     border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 .navbar-default .navbar-nav > li > a span:hover
@@ -5965,6 +6032,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 }
 @media (max-width: 767px)
 {
+    .navbar-default .navbar-nav > li
+    {
+        margin: 0 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-default .navbar-nav > li > a span
+    {
+        border-bottom: none;
+    }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a
     {
         color: #000;
@@ -5990,6 +6067,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn
         background-color: transparent;
     }
 }
+@media (max-width: 767px)
+{
+    .navbar-default .navbar-collapse
+    {
+        background-color: #f5f6f7;
+    }
+}
 .navbar-default .navbar-link
 {
     color: #000;
@@ -6013,6 +6097,20 @@ fieldset[disabled] .navbar-default .btn-link:hover,
 fieldset[disabled] .navbar-default .btn-link:focus
 {
     color: #ccc;
+}
+.menu
+{
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+}
+.menu__list
+{
+    width: 90%;
+    padding-top: 2em;
+}
+.menu__lang
+{
+    padding-top: 2em;
 }
 .breadcrumb
 {
@@ -6067,7 +6165,7 @@ fieldset[disabled] .navbar-default .btn-link:focus
 
     text-decoration: none;
 
-    color: #337ab7;
+    color: #0c4f72;
     border: 1px solid #ddd;
     background-color: #fff;
 }
@@ -6092,7 +6190,7 @@ fieldset[disabled] .navbar-default .btn-link:focus
 {
     z-index: 2;
 
-    color: #23527c;
+    color: #d9534f;
     border-color: #ddd;
     background-color: #eee;
 }
@@ -6108,8 +6206,8 @@ fieldset[disabled] .navbar-default .btn-link:focus
     cursor: default;
 
     color: #fff;
-    border-color: #337ab7;
-    background-color: #337ab7;
+    border-color: #0c4f72;
+    background-color: #0c4f72;
 }
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
@@ -6260,12 +6358,12 @@ a.label:focus
 }
 .label-primary
 {
-    background-color: #337ab7;
+    background-color: #0c4f72;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus
 {
-    background-color: #286090;
+    background-color: #072f44;
 }
 .label-success
 {
@@ -6349,7 +6447,7 @@ a.badge:focus
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge
 {
-    color: #337ab7;
+    color: #0c4f72;
     background-color: #fff;
 }
 .list-group-item > .badge
@@ -6446,13 +6544,13 @@ a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active
 {
-    border-color: #337ab7;
+    border-color: #0c4f72;
 }
 .thumbnail .caption
 {
     padding: 9px;
 
-    color: #333;
+    color: #000;
 }
 .alert
 {
@@ -6599,7 +6697,7 @@ a.thumbnail.active
     text-align: center;
 
     color: #fff;
-    background-color: #337ab7;
+    background-color: #0c4f72;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
 }
 .progress-striped .progress-bar,
@@ -6797,8 +6895,8 @@ button.list-group-item
     z-index: 2;
 
     color: #fff;
-    border-color: #337ab7;
-    background-color: #337ab7;
+    border-color: #0c4f72;
+    background-color: #0c4f72;
 }
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading,
@@ -6816,7 +6914,7 @@ button.list-group-item
 .list-group-item.active:hover .list-group-item-text,
 .list-group-item.active:focus .list-group-item-text
 {
-    color: #c7ddef;
+    color: #5cbcee;
 }
 .list-group-item-success
 {
@@ -7270,26 +7368,26 @@ button.list-group-item-danger.active:focus
 }
 .panel-primary
 {
-    border-color: #337ab7;
+    border-color: #0c4f72;
 }
 .panel-primary > .panel-heading
 {
     color: #fff;
-    border-color: #337ab7;
-    background-color: #337ab7;
+    border-color: #0c4f72;
+    background-color: #0c4f72;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body
 {
-    border-top-color: #337ab7;
+    border-top-color: #0c4f72;
 }
 .panel-primary > .panel-heading .badge
 {
-    color: #337ab7;
+    color: #0c4f72;
     background-color: #fff;
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body
 {
-    border-bottom-color: #337ab7;
+    border-bottom-color: #0c4f72;
 }
 .panel-success
 {
@@ -8642,12 +8740,4 @@ button.close
     {
         display: none !important;
     }
-}
-@font-face
-{
-    font-family: 'Museo Sans Cyrl';
-    font-weight: 500;
-    font-style: normal;
-
-    src: url('museosanscyrl-500-normal.woff2') format('woff2'), url('museosanscyrl-500-normal.woff') format('woff'), url('museosanscyrl-500-normal.ttf') format('truetype');
 }
