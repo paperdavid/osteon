@@ -74,6 +74,18 @@ body {
   }
 }
 
+footer p{
+
+  font-size: 12px;
+
+  @media (max-width: @screen-sm) {
+    font-size: 9px;
+  }
+  @media (max-width: @screen-xs) {
+    font-size: 12px;
+  }
+}
+////////////////////////////////////
 .lead {
   margin-bottom: @line-height-computed;
   font-size: floor((@font-size-base * 1.15));
@@ -84,6 +96,8 @@ body {
     font-size: (@font-size-base * 1.5);
   }
 }
+
+
 
 
 // Emphasis & misc

@@ -6,6 +6,6 @@ $(document).ready(function() {
 
     /* Custom */
 
-    //= ./common/google-analytics.js
+    //= ./common/likely.js
 
 });
