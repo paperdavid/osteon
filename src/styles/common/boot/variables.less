@@ -19,7 +19,7 @@
 @brand-success:         #5cb85c;
 @brand-info:            rgb(12, 79, 114);
 @brand-warning:         #fff0be;//
-@brand-danger:          #bb3333;
+@brand-danger:          #bb3333;//
 
 @black-underline:                 fadeout(#000000, 80%);
 @brand-primary-underline:         fadeout(@brand-primary, 80%);
@@ -51,7 +51,7 @@
 //## Font, line-height, and color for body text, headings, and more.
 
 @font-family-sans-serif:  "Museo Sans Cyrl", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-serif:       "Synerga", Georgia, Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
@@ -73,7 +73,7 @@
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    inherit;
+@headings-font-family:    @font-family-serif;
 @headings-font-weight:    500;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
