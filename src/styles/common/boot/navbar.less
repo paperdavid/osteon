@@ -11,7 +11,7 @@
 .navbar {
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  margin-bottom: @navbar-margin-bottom;
+  margin: @navbar-margin-bottom 0;
   border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
@@ -165,9 +165,12 @@
   float: left;
   padding: 10px 15px;
   font-size: @font-size-large;
-  line-height: 40px;
+  line-height: 36px;
   height: @navbar-height;
-  margin-right: 2em;
+
+    @media (max-width: 992px) {
+    line-height: 20px;
+  }
 
   &:hover,
   &:focus {
@@ -176,7 +179,11 @@
 
   > img {
     display: block;
-    height: 40px;
+    width: 120px;
+
+    @media (max-width: 1200px) {
+      width: 90px;
+    }
   }
 
   @media (max-width: 991px) {
