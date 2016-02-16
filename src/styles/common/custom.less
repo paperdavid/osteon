@@ -24,3 +24,72 @@ footer {
 .navbar-brand img {
   display: inline-block;
 }
+
+
+body {
+  @media (max-width: @screen-sm) {
+    font-size: 10px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 10px;
+  }
+  @media (max-width: @screen-xs) {
+    font-size: 14px;
+  }
+}
+
+footer p{
+
+  font-size: 12px;
+
+  @media (max-width: @screen-sm) {
+    font-size: 9px;
+  }
+  @media (max-width: @screen-xs) {
+    font-size: 12px;
+  }
+}
+
+
+.list {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 15px;
+
+  &__pure {
+    list-style-type: none;
+    -webkit-padding-start: 0;
+
+    & li {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.equipment-title {
+
+  & img {
+    max-width: 400px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

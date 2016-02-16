@@ -2,7 +2,6 @@
 // Typography
 // --------------------------------------------------
 
-
 // Headings
 // -------------------------
 
@@ -21,11 +20,16 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+h2 {
+
+  font-weight: bold;
+}
+
 h1, .h1,
 h2, .h2,
 h3, .h3 {
   margin-top: @line-height-computed;
-  margin-bottom: (@line-height-computed / 2);
+  margin-bottom: (@line-height-computed / 1.2);
 
   small,
   .small {
@@ -60,29 +64,6 @@ p {
 }
 
 
-body {
-  @media (max-width: @screen-sm) {
-    font-size: 10px;
-  }
-  @media (max-width: 1000px) {
-    font-size: 10px;
-  }
-  @media (max-width: @screen-xs) {
-    font-size: 14px;
-  }
-}
-
-footer p{
-
-  font-size: 12px;
-
-  @media (max-width: @screen-sm) {
-    font-size: 9px;
-  }
-  @media (max-width: @screen-xs) {
-    font-size: 12px;
-  }
-}
 ////////////////////////////////////
 .lead {
   margin-bottom: @line-height-computed;
@@ -326,4 +307,17 @@ address {
   margin-bottom: @line-height-computed;
   font-style: normal;
   line-height: @line-height-base;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.normal {
+  font-style: normal;
+  font-weight: normal;
 }

@@ -1875,7 +1875,7 @@ h6,
 .h5,
 .h6
 {
-    font-family: 'Synerga', Georgia, Times, serif;
+    font-family: 'PT Serif', Georgia, Times, serif;
     font-weight: 500;
     line-height: 1.1;
 
@@ -1911,6 +1911,10 @@ h6 .small,
 
     color: #777;
 }
+h2
+{
+    font-weight: bold;
+}
 h1,
 .h1,
 h2,
@@ -1919,7 +1923,7 @@ h3,
 .h3
 {
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 16.66666667px;
 }
 h1 small,
 .h1 small,
@@ -1994,45 +1998,6 @@ h6,
 p
 {
     margin: 0 0 10px;
-}
-@media (max-width: 768px)
-{
-    body
-    {
-        font-size: 10px;
-    }
-}
-@media (max-width: 1000px)
-{
-    body
-    {
-        font-size: 10px;
-    }
-}
-@media (max-width: 480px)
-{
-    body
-    {
-        font-size: 14px;
-    }
-}
-footer p
-{
-    font-size: 12px;
-}
-@media (max-width: 768px)
-{
-    footer p
-    {
-        font-size: 9px;
-    }
-}
-@media (max-width: 480px)
-{
-    footer p
-    {
-        font-size: 12px;
-    }
 }
 .lead
 {
@@ -2345,6 +2310,19 @@ address
     line-height: 1.42857143;
 
     margin-bottom: 20px;
+}
+.bold
+{
+    font-weight: bold;
+}
+.italic
+{
+    font-style: italic;
+}
+.normal
+{
+    font-weight: normal;
+    font-style: normal;
 }
 code,
 kbd,
@@ -9469,4 +9447,69 @@ footer
 .navbar-brand img
 {
     display: inline-block;
+}
+@media (max-width: 768px)
+{
+    body
+    {
+        font-size: 10px;
+    }
+}
+@media (max-width: 1000px)
+{
+    body
+    {
+        font-size: 10px;
+    }
+}
+@media (max-width: 480px)
+{
+    body
+    {
+        font-size: 14px;
+    }
+}
+footer p
+{
+    font-size: 12px;
+}
+@media (max-width: 768px)
+{
+    footer p
+    {
+        font-size: 9px;
+    }
+}
+@media (max-width: 480px)
+{
+    footer p
+    {
+        font-size: 12px;
+    }
+}
+.list
+{
+    display: block;
+
+    list-style-type: disc;
+
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 15px;
+}
+.list__pure
+{
+    list-style-type: none;
+
+    -webkit-padding-start: 0;
+}
+.list__pure li
+{
+    margin-bottom: 10px;
+}
+.equipment-title img
+{
+    max-width: 400px;
 }
