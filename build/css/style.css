@@ -1911,9 +1911,15 @@ h6 .small,
 
     color: #777;
 }
-h2
+h2,
+.h2
 {
     font-weight: bold;
+}
+h4,
+.h4
+{
+    font-family: 'Museo Sans Cyrl', Helvetica, Arial, sans-serif;
 }
 h1,
 .h1,
@@ -9546,4 +9552,8 @@ footer p
     padding: 1em 3em 3em;
 
     background-color: #f9f5e4;
+}
+.margin
+{
+    margin: 3em 0 1em;
 }
