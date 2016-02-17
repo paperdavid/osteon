@@ -9508,6 +9508,39 @@ footer p
         font-size: 12px;
     }
 }
+@media (max-width: 992px)
+{
+    h1,
+    .h1
+    {
+        font-size: 26px;
+    }
+    h2,
+    .h2
+    {
+        font-size: 21px;
+    }
+    h3,
+    .h3
+    {
+        font-size: 17px;
+    }
+    h4,
+    .h4
+    {
+        font-size: 12px;
+    }
+    h5,
+    .h5
+    {
+        font-size: 10px;
+    }
+    h6,
+    .h6
+    {
+        font-size: 8px;
+    }
+}
 .list
 {
     display: block;
@@ -9559,12 +9592,19 @@ footer p
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 10px;
 }
+@media (max-width: 768px)
+{
+    .hours
+    {
+        width: 120px;
+    }
+}
 .hours__title
 {
     position: absolute;
     top: -11px;
 
-    padding: 0 1em;
+    width: 60%;
 
     background-color: #fff;
 }
@@ -9617,6 +9657,13 @@ footer p
         margin-left: 0;
     }
 }
+@media (max-width: 768px)
+{
+    .contacts__phone
+    {
+        margin-left: 0;
+    }
+}
 .contacts__phone a
 {
     font-size: 1.5em;
@@ -9629,6 +9676,11 @@ footer p
     {
         font-size: 1em;
     }
+}
+.remain
+{
+    font-size: 18px;
+    line-height: 30px;
 }
 .icon
 {
@@ -9676,14 +9728,48 @@ footer p
 {
     display: block;
 
-    min-height: 255px;
+    height: 255px;
     margin-bottom: 4em;
 
     border-bottom: 1px solid #000;
 }
+@media (max-width: 480px)
+{
+    .specialists__item
+    {
+        min-height: 600px;
+
+        border: none;
+    }
+}
+@media (max-width: 1199px)
+{
+    .specialists__item
+    {
+        height: 210px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .specialists__item
+    {
+        height: 161px;
+    }
+}
 .specialists__item__info
 {
     width: 70%;
+}
+@media (max-width: 480px)
+{
+    .specialists__item__info
+    {
+        float: none!important;
+
+        width: 100%;
+
+        text-align: left;
+    }
 }
 .specialists__item__info span
 {
@@ -9705,4 +9791,17 @@ footer p
 .specialists__item__pic
 {
     width: 30%;
+}
+@media (max-width: 480px)
+{
+    .specialists__item__pic
+    {
+        float: none!important;
+
+        width: 100%;
+    }
+    .specialists__item__pic img
+    {
+        border-bottom: 1px solid #000;
+    }
 }
