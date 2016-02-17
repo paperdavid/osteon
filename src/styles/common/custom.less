@@ -11,7 +11,7 @@ img {
 }
 
 footer {
-  margin-top: 3em;
+  margin-top: 8em;
 }
 
 
@@ -71,7 +71,6 @@ footer p{
 }
 
 .equipment-item {
-  margin-bottom: 8em;
 
   &__grid {
 
@@ -100,6 +99,38 @@ footer p{
 
 }
 
+.map {
+  height: 300px;
+}
+
+.hours {
+  position: relative;
+  width: 152px;
+  padding:  2em 2em 1em;
+  border: 1px solid @black-underline;
+  border-radius: 10px;
+  text-align: center;
+
+  &__title {
+    position: absolute;
+    top: -11px;
+    background-color: #fff;
+    padding: 0 1em;
+  }
+
+  & p {
+    font-size: @font-size-small;
+    margin-bottom: 0;
+    font-family: @font-family-serif;
+    font-style: italic;
+  }
+
+  & span {
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: .6em;
+  }
+}
 
 
 .callback {
@@ -112,12 +143,18 @@ footer p{
 .margin {
   margin: 3em 0 1em;
 
+  &__lg {
+    margin-top: 6em;
+  }
 }
 
 .contacts {
 
   &__mail {
 
+    & a {
+      font-size: 1.5em;
+    }
   }
 
   &__phone {
@@ -125,6 +162,7 @@ footer p{
 
     & a {
       color: @brand-danger;
+      font-size: 1.5em;
     }
   }
 }
