@@ -114,7 +114,54 @@ footer p{
 
 }
 
+.contacts {
 
+  &__mail {
+
+  }
+
+  &__phone {
+    margin-top: 0;
+
+    & a {
+      color: @brand-danger;
+    }
+  }
+}
+
+
+
+.icon {
+  display: inline-block;
+  background-image: url(../../img/images/icons.png);
+  background-size: 500px;
+  width: 30px;
+  height: 20px;
+  margin-left: -30px;
+
+  @media (max-width: @screen-xs) {
+    margin-left: -4px;
+  }
+
+  &__ground {
+    background-position: -49px -7px;
+    width: 38px;
+    margin-left: -38px;
+
+    @media (max-width: @screen-xs) {
+    margin-left: 0;
+    }
+  }
+
+  &__metro {
+    background-position: -93px -8px;
+  }
+
+  &__info {
+    background-position: -5px -10px;
+    margin-bottom: -4px;
+  }
+}
 
 
 

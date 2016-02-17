@@ -9557,3 +9557,53 @@ footer p
 {
     margin: 3em 0 1em;
 }
+.contacts__phone
+{
+    margin-top: 0;
+}
+.contacts__phone a
+{
+    color: #b33;
+}
+.icon
+{
+    display: inline-block;
+
+    width: 30px;
+    height: 20px;
+    margin-left: -30px;
+
+    background-image: url(../../img/images/icons.png);
+    background-size: 500px;
+}
+@media (max-width: 480px)
+{
+    .icon
+    {
+        margin-left: -4px;
+    }
+}
+.icon__ground
+{
+    width: 38px;
+    margin-left: -38px;
+
+    background-position: -49px -7px;
+}
+@media (max-width: 480px)
+{
+    .icon__ground
+    {
+        margin-left: 0;
+    }
+}
+.icon__metro
+{
+    background-position: -93px -8px;
+}
+.icon__info
+{
+    margin-bottom: -4px;
+
+    background-position: -5px -10px;
+}
