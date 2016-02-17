@@ -136,6 +136,8 @@ footer p{
 .callback {
   padding: 1em 3em 3em;
   background-color: @brand-warning;
+  border-radius: 10px;
+  border: 1px solid darken(@brand-warning, 10%);
 }
 
 
@@ -159,10 +161,20 @@ footer p{
 
   &__phone {
     margin-top: 0;
+    margin-left: -26px;
+
+    @media (max-width: @screen-xs) {
+      margin-left: 0;
+      margin-bottom: 2em;
+    }
 
     & a {
       color: @brand-danger;
       font-size: 1.5em;
+
+      @media (max-width: @screen-xs) {
+        font-size: 1em;
+    }
     }
   }
 }
@@ -200,6 +212,51 @@ footer p{
     margin-bottom: -4px;
   }
 }
+
+
+.specialists {
+
+
+  &__item {
+    display: block;
+    min-height: 255px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 4em;
+
+    &__info {
+      width: 70%;
+
+      & span {
+        display: block;
+        padding-top: 1em;
+        font-size: 1.5em;
+        color: @brand-danger;
+        font-family: @font-family-serif;
+      }
+
+      & small {
+        display: block;
+        margin-bottom: 1em;
+      }
+    }
+
+    &__pic {
+      width: 30%;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

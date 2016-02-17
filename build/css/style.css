@@ -9588,6 +9588,8 @@ footer p
 {
     padding: 1em 3em 3em;
 
+    border: 1px solid #f0e6ba;
+    border-radius: 10px;
     background-color: #f9f5e4;
 }
 .margin
@@ -9605,12 +9607,28 @@ footer p
 .contacts__phone
 {
     margin-top: 0;
+    margin-left: -26px;
+}
+@media (max-width: 480px)
+{
+    .contacts__phone
+    {
+        margin-bottom: 2em;
+        margin-left: 0;
+    }
 }
 .contacts__phone a
 {
     font-size: 1.5em;
 
     color: #b33;
+}
+@media (max-width: 480px)
+{
+    .contacts__phone a
+    {
+        font-size: 1em;
+    }
 }
 .icon
 {
@@ -9653,4 +9671,38 @@ footer p
     margin-bottom: -4px;
 
     background-position: -5px -10px;
+}
+.specialists__item
+{
+    display: block;
+
+    min-height: 255px;
+    margin-bottom: 4em;
+
+    border-bottom: 1px solid #000;
+}
+.specialists__item__info
+{
+    width: 70%;
+}
+.specialists__item__info span
+{
+    font-family: 'PT Serif', Georgia, Times, serif;
+    font-size: 1.5em;
+
+    display: block;
+
+    padding-top: 1em;
+
+    color: #b33;
+}
+.specialists__item__info small
+{
+    display: block;
+
+    margin-bottom: 1em;
+}
+.specialists__item__pic
+{
+    width: 30%;
 }
