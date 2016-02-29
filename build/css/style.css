@@ -9563,8 +9563,34 @@ footer p
 {
     margin-bottom: 10px;
 }
-.equipment-item__grid > div
+.list__pure li.active > a
 {
+    cursor: default;
+
+    color: #b33;
+    border: none;
+}
+.list__line
+{
+    -webkit-padding-start: 0;
+}
+.list__line > li
+{
+    list-style-type: none;
+}
+.list__line > li:before
+{
+    display: inline-block;
+
+    content: '—';
+    text-decoration: inherit;
+    text-indent: -30px;
+
+    color: #111;
+}
+.equipment-item__grid__cell
+{
+    height: 290px;
     margin: 2em 0;
 }
 .equipment-item__grid img
@@ -9597,6 +9623,13 @@ footer p
     .hours
     {
         width: 120px;
+    }
+}
+@media (max-width: 480px)
+{
+    .hours
+    {
+        width: 180px;
     }
 }
 .hours__title
@@ -9728,7 +9761,7 @@ footer p
 {
     display: block;
 
-    height: 255px;
+    height: 263px;
     margin-bottom: 4em;
 
     border-bottom: 1px solid #000;
@@ -9746,29 +9779,14 @@ footer p
 {
     .specialists__item
     {
-        height: 210px;
+        height: 214px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px)
 {
     .specialists__item
     {
-        height: 161px;
-    }
-}
-.specialists__item__info
-{
-    width: 70%;
-}
-@media (max-width: 480px)
-{
-    .specialists__item__info
-    {
-        float: none!important;
-
-        width: 100%;
-
-        text-align: left;
+        height: 159px;
     }
 }
 .specialists__item__info span
@@ -9788,10 +9806,6 @@ footer p
 
     margin-bottom: 1em;
 }
-.specialists__item__pic
-{
-    width: 30%;
-}
 @media (max-width: 480px)
 {
     .specialists__item__pic
@@ -9809,6 +9823,45 @@ footer p
 {
     padding: 3em;
 
+    border: 1px solid #d9e5f1;
     border-radius: 10px;
     background-color: #ecf2f8;
+}
+.programs-item__header
+{
+    padding: 1em 3em 3em;
+
+    color: #fff;
+    border-radius: 20px;
+    background-image: url(../../img/images/programs/common/board.jpg);
+}
+.programs-item__header__info > ul
+{
+    -webkit-padding-start: 0;
+}
+.programs-item__header__info > ul li
+{
+    list-style-type: none;
+}
+.programs-item__header__info > ul li:before
+{
+    display: inline-block;
+
+    content: '—';
+    text-decoration: inherit;
+    text-indent: -20px;
+
+    color: #fff;
+}
+.programs-item__header__info p
+{
+    margin-top: 2em;
+}
+.programs-item__header__price
+{
+    font-family: 'PT Serif', Georgia, Times, serif;
+    font-size: 1.5em;
+    font-style: italic;
+
+    margin-top: 20px;
 }
