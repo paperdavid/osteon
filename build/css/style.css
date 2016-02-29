@@ -9865,3 +9865,23 @@ footer p
 
     margin-top: 20px;
 }
+.programs-item__callback
+{
+    margin-top: 66px;
+}
+.caption
+{
+    font-family: 'PT Serif', Georgia, Times, serif;
+    font-size: 11px;
+
+    margin-top: 1em;
+    margin-bottom: 3em;
+
+    letter-spacing: .03em;
+
+    color: #333;
+}
+.add-info
+{
+    margin-top: 5em;
+}
