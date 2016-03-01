@@ -30,6 +30,8 @@ body {
   line-height: @line-height-base;
   color: @text-color;
   background-color: @body-bg;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 // Reset fonts for relevant elements
@@ -73,6 +75,10 @@ a.link{
 
   &:focus {
     .tab-focus();
+  }
+
+  &:visited {
+    color: #660099;
   }
 }
 

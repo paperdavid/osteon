@@ -138,7 +138,7 @@ footer p{
 
 .hours {
 	position: relative;
-	width: 152px;
+	width: 153px;
 	padding:  2em 2em 1em;
 	border: 1px solid @black-underline;
 	border-radius: 10px;
@@ -193,6 +193,10 @@ footer p{
 	&__lg {
 		margin-top: 6em;
 	}
+
+	&__md {
+		margin-top: 5em;
+	}
 }
 
 .contacts {
@@ -206,14 +210,9 @@ footer p{
 
 	&__phone {
 		margin-top: 0;
-		margin-left: -26px;
 
 		@media (max-width: @screen-xs) {
-			margin-left: 0;
 			margin-bottom: 2em;
-		}
-		@media (max-width: @screen-sm) {
-			margin-left: 0;
 		}
 
 		& a {
@@ -329,10 +328,21 @@ footer p{
 .programs-item {
 
 	&__header {
-		padding: 1em 3em 3em;
+		padding: 1em 3em;
 		border-radius: 20px;
 		color: #fff;
-		background-image: url(../../img/images/programs/common/board.jpg);
+	background: #e55140;
+	background: -webkit-linear-gradient(top, #e55140, #bb3333);
+	background: -o-linear-gradient(top, #e55140, #bb3333);
+	background: linear-gradient(to bottom, #e55140, #bb3333);
+		font-size: 1.2em;
+
+		&__second {
+		background: #00d2ff;
+		background: -webkit-linear-gradient(top, #00d2ff, #3a7bd5);
+		background: -o-linear-gradient(top, #00d2ff, #3a7bd5);
+		background: linear-gradient(to bottom, #00d2ff, #3a7bd5);
+		}
 
 		&__info {
 
@@ -357,11 +367,8 @@ footer p{
 
 		}
 
-		&__price {
+		&__price{
 			margin-top: 20px;
-			font-size: 1.5em;
-			font-style: italic;
-			font-family: @font-family-serif;
 		}
 	}
 
@@ -394,7 +401,7 @@ footer p{
 }
 
 .program {
-	padding: 1em 3em;
+	padding: 2em 3em 1em;
 	border-radius: 20px 0px;
 	color: #fff;
 	background: #e55140;
@@ -402,6 +409,7 @@ footer p{
 	background: -o-linear-gradient(top, #e55140, #bb3333);
 	background: linear-gradient(to bottom, #e55140, #bb3333);
 	position: relative;
+	overflow: hidden;
 
 	&--second {
 		background: #00d2ff;
@@ -430,6 +438,10 @@ footer p{
 		&--second {
 			background-image: url(../../img/images/test.png);
 		}
+	}
+
+	& > hr {
+		margin-top: 10px;
 	}
 
 	&__title {

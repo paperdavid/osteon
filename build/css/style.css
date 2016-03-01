@@ -1732,6 +1732,9 @@ body
 
     color: #000;
     background-color: #fff;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 input,
 button,
@@ -1779,6 +1782,10 @@ a.link:focus
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px;
+}
+a.link:visited
+{
+    color: #609;
 }
 figure
 {
@@ -1915,6 +1922,8 @@ h2,
 .h2
 {
     font-weight: bold;
+
+    letter-spacing: .05em;
 }
 h4,
 .h4
@@ -2320,6 +2329,10 @@ address
 .bold
 {
     font-weight: bold;
+}
+strong
+{
+    letter-spacing: .06em;
 }
 .italic
 {
@@ -9610,7 +9623,7 @@ footer p
 {
     position: relative;
 
-    width: 152px;
+    width: 153px;
     padding: 2em 2em 1em;
 
     text-align: center;
@@ -9673,6 +9686,10 @@ footer p
 {
     margin-top: 6em;
 }
+.margin__md
+{
+    margin-top: 5em;
+}
 .contacts__mail a
 {
     font-size: 1.5em;
@@ -9680,21 +9697,12 @@ footer p
 .contacts__phone
 {
     margin-top: 0;
-    margin-left: -26px;
 }
 @media (max-width: 480px)
 {
     .contacts__phone
     {
         margin-bottom: 2em;
-        margin-left: 0;
-    }
-}
-@media (max-width: 768px)
-{
-    .contacts__phone
-    {
-        margin-left: 0;
     }
 }
 .contacts__phone a
@@ -9829,11 +9837,21 @@ footer p
 }
 .programs-item__header
 {
-    padding: 1em 3em 3em;
+    font-size: 1.2em;
+
+    padding: 1em 3em;
 
     color: #fff;
     border-radius: 20px;
-    background-image: url(../../img/images/programs/common/board.jpg);
+    background: #e55140;
+    background: -webkit-linear-gradient(top, #e55140, #b33);
+    background:         linear-gradient(to bottom, #e55140, #b33);
+}
+.programs-item__header__second
+{
+    background: #00d2ff;
+    background: -webkit-linear-gradient(top, #00d2ff, #3a7bd5);
+    background:         linear-gradient(to bottom, #00d2ff, #3a7bd5);
 }
 .programs-item__header__info > ul
 {
@@ -9859,10 +9877,6 @@ footer p
 }
 .programs-item__header__price
 {
-    font-family: 'PT Serif', Georgia, Times, serif;
-    font-size: 1.5em;
-    font-style: italic;
-
     margin-top: 20px;
 }
 .programs-item__callback
@@ -9893,7 +9907,9 @@ footer p
 {
     position: relative;
 
-    padding: 1em 3em;
+    overflow: hidden;
+
+    padding: 2em 3em 1em;
 
     color: #fff;
     border-radius: 20px 0;
@@ -9930,6 +9946,10 @@ footer p
 .program__overlay--second
 {
     background-image: url(../../img/images/test.png);
+}
+.program > hr
+{
+    margin-top: 10px;
 }
 .program__title
 {
