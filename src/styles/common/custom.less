@@ -123,7 +123,7 @@ footer p{
 	}
 
 	&__img img {
-		max-width: 400px;
+		max-width: 300px;
 	}
 
 	&__info {
@@ -271,7 +271,7 @@ footer p{
 		display: block;
 		height: 263px;
 		border-bottom: 1px solid #000;
-		margin-bottom: 4em;
+		margin-bottom: 7em;
 
 		@media (max-width: @screen-xs) {
 			min-height: 600px;
@@ -290,7 +290,7 @@ footer p{
 
 			& span {
 				display: block;
-				padding-top: 1em;
+				padding-top: 2em;
 				font-size: 1.5em;
 				color: @brand-danger;
 				font-family: @font-family-serif;
@@ -495,8 +495,39 @@ footer p{
 	}
 }
 
+.feedback {
 
+	&__item {
+		margin-top: 1em;
+		margin-bottom: 5em;
+	}
 
+	&__name {
+		margin-top: 0;
+		color: @brand-danger;
+		font-size: 18px;
+	}
+
+	&__sidebar {
+		margin-top: 0;
+	}
+}
+
+.blockquote {
+
+	&:before {
+		content: '« ';
+		display: inline-block;
+		font-size: 1em;
+		margin-left: -9px;
+		font-weight: bold;
+	}
+	&:after {
+		content: ' »';
+		font-size: 1em;
+		font-weight: bold;
+	}
+}
 
 
 
