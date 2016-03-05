@@ -411,6 +411,11 @@ footer p{
 	position: relative;
 	overflow: hidden;
 
+	@media (max-width: @screen-xs) {
+		padding: 1em 2em;
+		margin-bottom: 2em;
+	}
+
 	&--second {
 		background: #00d2ff;
 		background: -webkit-linear-gradient(top, #00d2ff, #3a7bd5);
@@ -460,6 +465,7 @@ footer p{
 			-webkit-padding-start: 0;
 		}
 		
+
 		& > ul li {
 			list-style-type: none;
 			margin-bottom: 1em;
@@ -503,13 +509,17 @@ footer p{
 	}
 
 	&__name {
-		margin-top: 0;
+		margin-top: .5em;
 		color: @brand-danger;
 		font-size: 18px;
 	}
 
 	&__sidebar {
 		margin-top: 0;
+	}
+
+	&__pic {
+		width: 70px;
 	}
 }
 
@@ -519,15 +529,51 @@ footer p{
 		content: '« ';
 		display: inline-block;
 		font-size: 1em;
-		margin-left: -9px;
+		margin-left: -.6em;
 		font-weight: bold;
 	}
 	&:after {
-		content: ' »';
+		content: '»';
 		font-size: 1em;
 		font-weight: bold;
 	}
+
+	&__text {
+		font-size: 1.3em;
+		text-align: center;
+		margin: 2em 0;
+	}
 }
+
+.pricelist {
+
+	& thead > tr > th {
+		font-size: 1em;
+	}
+
+	&__cat {
+		font-size: 1.2em;
+		font-family: @font-family-serif;
+	}
+	&__sub-cat {
+		font-size: 1.2em;
+		font-family: @font-family-serif;
+		font-style: italic;
+	}
+
+	&__num {
+		padding-right: 10px!important;
+	}
+
+}
+
+
+
+
+
+
+
+
 
 
 
