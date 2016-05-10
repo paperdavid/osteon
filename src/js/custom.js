@@ -8,6 +8,9 @@ $(document).ready(function() {
 
 		//= ./common/likely.js
 		//= ./common/owl.carousel.min.js
+		//= ./common/blueimp-gallery.js
+		//= ./common/blueimp-gallery-fullscreen.js
+
 
 
 

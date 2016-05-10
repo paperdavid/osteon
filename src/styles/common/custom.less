@@ -12,6 +12,10 @@ img {
 
 footer {
 	margin-top: 8em;
+
+		@media (max-width: @screen-xs) {
+			margin-top: 3em;
+		}
 }
 
 
@@ -91,6 +95,7 @@ footer p{
 	-webkit-padding-start: 0;
 			& > li {
 			list-style-type: none;
+			margin-bottom: 10px;
 			}
 			& > li:before {
 			content:"—";
@@ -109,11 +114,25 @@ footer p{
 		&__cell {
 			margin: 2em 0;
 			height: 290px;
+
+			@media (max-width: @screen-xs) {
+				height: 150px;
+				font-size: .8em;
+				margin-bottom: 2em;
+			}
 		}
 
 		& img {
 			height: 200px;
 			width: auto;
+
+			@media (max-width: @screen-xs) {
+				height: 120px;
+			}
+			@media (max-width: @screen-sm) {
+				height: 180px;
+			}
+
 		}
 
 	}
@@ -173,13 +192,14 @@ footer p{
 	& span {
 		display: block;
 		font-size: 1.8em;
-		margin-bottom: .6em;
+		margin-bottom: .3em;
+		margin-top: .2em;
 	}
 }
 
 
 .callback {
-	padding: 1em 3em 3em;
+	padding: 2em 1em;
 	background-color: @brand-warning;
 	border-radius: 10px;
 	border: 1px solid darken(@brand-warning, 10%);
@@ -196,6 +216,14 @@ footer p{
 
 	&__md {
 		margin-top: 5em;
+
+		@media (max-width: @screen-xs) {
+			margin-top: 1em;
+		}
+	}
+
+	&__bottom {
+		margin-bottom: 2em;
 	}
 }
 
@@ -276,6 +304,7 @@ footer p{
 		@media (max-width: @screen-xs) {
 			min-height: 600px;
 			border: none;
+			margin-bottom: 1em;
 		}
 
 		@media (max-width: 1199px) {
@@ -322,6 +351,10 @@ footer p{
 	background-color: #ecf2f8;
 	border-radius: 10px;
 	border: 1px solid darken(#ecf2f8, 5%);
+
+		@media (max-width: @screen-xs) {
+			margin: 1em 0;
+		}
 }
 
 
@@ -337,6 +370,11 @@ footer p{
 	background: linear-gradient(to bottom, #e55140, #bb3333);
 		font-size: 1.2em;
 
+	@media (max-width: @screen-xs) {
+		padding: 1em 2em;
+		font-size: .5em;
+	}
+	
 		&__second {
 		background: #00d2ff;
 		background: -webkit-linear-gradient(top, #00d2ff, #3a7bd5);
@@ -352,6 +390,10 @@ footer p{
 			
 			& > ul li {
 				list-style-type: none;
+
+					@media (max-width: @screen-xs) {
+						font-size: 2em;
+					}
 			}
 			& > ul li:before {
 				content:"—";
@@ -359,16 +401,34 @@ footer p{
 				text-decoration: inherit;
 				color: #fff;
 				text-indent: -20px;
+
+					@media (max-width: @screen-xs) {
+						content: '∞';
+						text-indent: -10px;
+					}
+
 			}
 
 			& p {
 				margin-top: 2em;
+
+					@media (max-width: @screen-xs) {
+						font-size: 2em;
+					}
 			}
 
 		}
 
 		&__price{
 			margin-top: 20px;
+
+			& > .h2 {
+					@media (max-width: @screen-xs) {
+						font-size: 2.4em;
+						float: left!important;
+						padding: 0 1em;
+					}
+			}
 		}
 	}
 
@@ -440,6 +500,10 @@ footer p{
 		background-image: url(../../img/images/test.png);
 		background-size: cover;
 
+		@media (max-width: @screen-xs) {
+			display: none;
+		}
+
 		&--second {
 			background-image: url(../../img/images/test.png);
 		}
@@ -452,14 +516,30 @@ footer p{
 	&__title {
 		font-size: 2.5em;
 		font-family: @font-family-serif;
+		
+		@media (max-width: @screen-xs) {
+			font-size: 1.8em;
+		}
+
 	}
 
 	&__info {
 
+		&__facts {
+			@media (max-width: @screen-xs) {
+			font-size: 1.2em;
+			}
+		}
+
 		&__title {
 			margin-top: .5em;
 			margin-bottom: .7em;
-			font-size: 1.7em;
+			font-size: 1.4em;
+
+			@media (max-width: @screen-xs) {
+				font-size: 1.1em;
+				margin-top: 0;
+			}
 		}
 		& > ul {
 			-webkit-padding-start: 0;
@@ -472,6 +552,11 @@ footer p{
 
 			& a {
 				font-size: 1.2em;
+
+				@media (max-width: @screen-xs) {
+					font-size: 1em;
+				}
+
 			}
 		}
 		& > ul li:before {
@@ -516,6 +601,11 @@ footer p{
 
 	&__sidebar {
 		margin-top: 0;
+
+			@media (max-width: @screen-xs) {
+				font-size: 1.2em;
+				margin-top: 2em;
+		}
 	}
 
 	&__pic {
@@ -539,7 +629,7 @@ footer p{
 	}
 
 	&__text {
-		font-size: 1.3em;
+		font-size: 1.7em;
 		text-align: center;
 		margin: 2em 0;
 	}
@@ -549,16 +639,19 @@ footer p{
 
 	& thead > tr > th {
 		font-size: 1em;
+		font-weight: bold;
 	}
 
 	&__cat {
 		font-size: 1.2em;
 		font-family: @font-family-serif;
+		font-weight: bold;
 	}
 	&__sub-cat {
 		font-size: 1.2em;
 		font-family: @font-family-serif;
 		font-style: italic;
+		font-weight: bold;
 	}
 
 	&__num {
@@ -567,8 +660,11 @@ footer p{
 
 }
 
+th {
+	font-weight: normal;
+}
 
-
+.btn-call{line-height: 59px;padding-right: 15px;}
 
 
 
